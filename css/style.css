@@ -9,10 +9,6 @@ body {
     background-color: var(--backgroundColor);
 }
 
-header {
-    background-image: url(/assets/IndexBg.svg);
-}
-
 
 ul {
     list-style: none;
@@ -20,4 +16,66 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+
+
+.headmenu {
+    font-family: var(--fontMenu);
+    font-size: var(--fontSizeTitelMenu);
+}
+
+.headmenu a:not(.valgt) {
+    color: var(--hoverColor);
+}
+
+a:hover:not(.valgt) {
+    color: var(--hoverColor);
+}
+
+#indexli1 a {
+    color: var(--backgroundColor);
+}
+
+#indexli1 a:hover {
+    color: var(--detaljeColor);
+}
+
+
+@media (max-width: 499px) {
+
+
+    /* Projekt */
+    .headmenu {
+        font-size: var(--MfontSizeTitelMenu);
+
+    }
+
+    .headmenu a:not(.valgt) {
+        color: var(--fontColor);
+    }
+
+    .temaul a:not(.valgt) {
+        color: var(--fontColor);
+    }
+
+    .temaul a:hover:not(.valgt) {
+        color: var(--hoverColor);
+    }
+
+    .valgt {
+        color: var(--hoverColor);
+    }
+
+    .temaul {
+        font-family: var(--fontUnderMenu);
+        font-size: var(--MfontSizeUnderMenu);
+    }
+
+    .tema {
+        font-family: var(--fontUnderMenu);
+        font-size: var(--MfontSizeUnderMenu);
+    }
+
+
 }

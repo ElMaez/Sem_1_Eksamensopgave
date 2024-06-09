@@ -8,31 +8,24 @@
 
 
     --fontMenu: "Fredericka the Great", serif;
-    --fontUndeeMenu: "Finger Paint", sans-serif;
+    --fontUnderMenu: "Finger Paint", sans-serif;
 
 
-    --fontSizeTitelMenu: 5vw;
+    --fontSizeTitelMenu: 48px;
     --fontSizeUnderMenu: 64px;
     --h1: 48px;
     --h2: 32px;
     --p: 20px;
-}
+
+    /* gaps */
+
+    --gap2: 2rem;
 
 
-a {
-    font-family: var(--fontMenu);
-    font-size: var(--fontSizeTitelMenu);
-    color: var(--fontColor);
-}
-
-a:hover {
-    color: var(--hoverColor);
-}
-
-#indexli1 a {
-    color: var(--backgroundColor);
-}
-
-#indexli1 a:hover {
-    color: var(--detaljeColor);
+    /* Mobile */
+    --MfontSizeTitelMenu: 24px;
+    --MfontSizeUnderMenu: 24px;
+    --Mh1: 24px;
+    --Mh2: 10px;
+    --Mp: 8px;
 }
