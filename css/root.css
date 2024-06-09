@@ -9,4 +9,18 @@
 
     --fontMenu: "Fredericka the Great", serif;
     --fontUndeeMenu: "Finger Paint", sans-serif;
+
+
+    --fontSizeMenu: 48px;
+    --fontSizeUnderMenu: 64px;
+    --h1: 48px;
+    --h2: 32px;
+    --p: 20px;
+}
+
+
+a {
+    font-family: var(--fontMenu);
+    font-size: var(--fontSizeMenu);
+    color: var(--fontColor);
 }

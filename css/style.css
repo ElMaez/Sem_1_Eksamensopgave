@@ -6,6 +6,9 @@ body {
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
