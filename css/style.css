@@ -1,4 +1,4 @@
-@import url(root.css);
+@import url("root.css");
 
 * {
     padding: 0;
@@ -9,6 +9,9 @@ body {
     background-color: var(--backgroundColor);
 }
 
+main {
+    padding: 2rem;
+}
 
 ul {
     list-style: none;
@@ -17,8 +20,6 @@ ul {
 a {
     text-decoration: none;
 }
-
-
 
 .headmenu {
     font-family: var(--fontMenu);
@@ -45,7 +46,7 @@ a:hover:not(.valgt) {
 @media (max-width: 499px) {
 
 
-    /* Projekt */
+    /* Projekt navigation*/
     .headmenu {
         font-size: var(--MfontSizeTitelMenu);
 
@@ -53,6 +54,10 @@ a:hover:not(.valgt) {
 
     .headmenu a:not(.valgt) {
         color: var(--fontColor);
+    }
+
+    .headmenu a:hover:not(.valgt) {
+        color: var(--hoverColor);
     }
 
     .temaul a:not(.valgt) {
@@ -77,5 +82,34 @@ a:hover:not(.valgt) {
         font-size: var(--MfontSizeUnderMenu);
     }
 
+    /* Projekt Indhold */
 
+    h1 {
+        font-family: var(--fontUnderMenu);
+        font-size: var(--Mh1);
+        color: var(--hoverColor);
+    }
+
+    h2 {
+        font-family: var(--fontUnderMenu);
+        font-size: var(--Mh2);
+        color: var(--hoverColor);
+    }
+
+    h3 {
+        font-family: var(--fontUnderMenu);
+        font-size: var(--Mh3);
+        color: var(--hoverColor);
+    }
+
+    p {
+        max-width: 65ch;
+        font-family: var(--text);
+        font-size: var(--Mp);
+        color: var(--fontColor);
+    }
+
+    #tema5_2 ul {
+        list-style: disc;
+    }
 }

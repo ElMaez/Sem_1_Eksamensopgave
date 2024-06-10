@@ -1,13 +1,12 @@
 @import url(root.css);
 
 * {
-    outline: dashed 1px red;
+    /* outline: dashed 1px red; */
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-
 
 }
 
@@ -60,7 +59,7 @@ body {
 
     /*  Mobile */
     * {
-        outline: dashed 1px blue;
+        /* outline: dashed 1px blue; */
     }
 
     #indexbg nav {
@@ -88,13 +87,215 @@ body {
 
 
     /* Projekt */
-    ul {
+    .headmenu,
+    .temaul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-
+        justify-content: center;
+        justify-content: space-evenly;
         margin-top: var(--gap2);
     }
 
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: max-content 1fr;
+
+        row-gap: var(--gap2);
+    }
+
+    h1 {
+        grid-column: 1/-1;
+        grid-row: 1/ 2;
+        margin-top: var(--gap4);
+    }
+
+    #opgavefokus {
+        width: 100%;
+        grid-column: 1 /-1;
+        grid-row: 2 / 3;
+        justify-self: center;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content 1fr 1fr;
+    }
+
+    #tema5_1 {
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .circleimg {
+
+        grid-column: 1/ -1;
+        grid-row: 1;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    .circleimg a {
+        grid-column: 1/4;
+        grid-row: 1/ 2;
+
+        z-index: 1;
+        margin-top: var(--gap2);
+        margin-left: var(--gap4);
+
+    }
+
+    img {
+        width: 60vw;
+        border-radius: 10px;
+    }
+
+    .circle {
+        width: 30vw;
+        aspect-ratio: 1/1;
+
+        border-radius: 100%;
+        border: solid var(--hoverColor) 2.5vw;
+
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+
+        justify-self: center;
+    }
+
+    #tema5_1 {
+        margin-top: var(--gap4);
+    }
+
+    #opgavefokus h2 {
+        margin-bottom: var(--gap2);
+    }
+
+    #opgavefokus h3 {
+        margin-bottom: var(--gap1);
+    }
+
+    #opgavefokus p {
+        line-height: var(--lineheight);
+    }
+
+
+    /* Slider */
+
+    #slider-wrapper {
+        position: relative;
+        width: 80%;
+        height: 33rem;
+    }
+
+    #slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+
+    #slider div {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+    }
+
+    #slider-nav {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    #slider-nav a {
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: solid 5px var(--detaljeColor);
+        opacity: 0.75;
+
+        transition: opacity ease 250ms;
+    }
+
+    #slider-nav a:hover {
+        opacity: 1;
+        background-color: var(--detaljeColor);
+    }
+
+
+    /* Hvad lærte jeg? */
+
+    #tema5_2 {
+        margin-top: var(--gap6);
+        width: 90vw;
+        grid-column: 1 /-1;
+        grid-row: 3;
+    }
+
+
+    #slider-wrapper2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        height: 50vw;
+    }
+
+
+    #slider2 {
+
+        height: 40vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        overflow: hidden;
+
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    #slider2 div {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        padding: var(--gap1);
+    }
+
+
+    #slider-nav2 {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+
+        grid-column: 1/-1;
+        grid-row: 2;
+
+        z-index: 1;
+    }
+
+
+    #slider-nav2 a {
+        width: 1.5rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: solid 5px var(--detaljeColor);
+        opacity: 0.75;
+
+        transition: opacity ease 250ms;
+    }
+
+    #slider-nav2 a:hover {
+        opacity: 1;
+        background-color: var(--detaljeColor);
+    }
 
 }

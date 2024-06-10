@@ -9,23 +9,31 @@
 
     --fontMenu: "Fredericka the Great", serif;
     --fontUnderMenu: "Finger Paint", sans-serif;
+    --text: "Signika", sans-serif;
 
 
     --fontSizeTitelMenu: 48px;
     --fontSizeUnderMenu: 64px;
     --h1: 48px;
     --h2: 32px;
+    --h3: 24px;
     --p: 20px;
 
-    /* gaps */
+    --lineheight: 1.7rem;
 
+    /* gaps */
+    --gap1: 1rem;
     --gap2: 2rem;
+    --gap4: 4rem;
+    --gap6: 6rem;
+    --gap12: 12rem;
 
 
     /* Mobile */
     --MfontSizeTitelMenu: 24px;
     --MfontSizeUnderMenu: 24px;
-    --Mh1: 24px;
-    --Mh2: 10px;
-    --Mp: 8px;
+    --Mh1: 22px;
+    --Mh2: 20px;
+    --Mh3: 18px;
+    --Mp: 15px;
 }
