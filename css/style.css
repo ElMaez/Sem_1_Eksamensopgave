@@ -1,121 +1,107 @@
 @import url("root.css");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
-
-main {
-    padding: 2rem;
-}
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .headmenu {
-    font-family: var(--fontMenu);
-    font-size: var(--fontSizeTitelMenu);
+  font-family: var(--fontMenu);
+  font-size: var(--fontSizeTitelMenu);
 }
 
 .headmenu a:not(.valgt) {
-    color: var(--hoverColor);
+  color: var(--hoverColor);
 }
 
 a:hover:not(.valgt) {
-    color: var(--hoverColor);
+  color: var(--hoverColor);
 }
 
 #indexli1 a {
-    color: var(--backgroundColor);
+  color: var(--backgroundColor);
 }
 
 #indexli1 a:hover {
-    color: var(--detaljeColor);
+  color: var(--detaljeColor);
 }
 
-
 @media (max-width: 499px) {
+  /* Projekt navigation*/
+  .headmenu {
+    font-size: var(--MfontSizeTitelMenu);
+  }
 
+  .headmenu a:not(.valgt) {
+    color: var(--fontColor);
+  }
 
-    /* Projekt navigation*/
-    .headmenu {
-        font-size: var(--MfontSizeTitelMenu);
+  .headmenu a:hover:not(.valgt) {
+    color: var(--hoverColor);
+  }
 
-    }
+  .temaul a:not(.valgt) {
+    color: var(--fontColor);
+  }
 
-    .headmenu a:not(.valgt) {
-        color: var(--fontColor);
-    }
+  .temaul a:hover:not(.valgt) {
+    color: var(--hoverColor);
+  }
 
-    .headmenu a:hover:not(.valgt) {
-        color: var(--hoverColor);
-    }
+  .valgt {
+    color: var(--hoverColor);
+  }
 
-    .temaul a:not(.valgt) {
-        color: var(--fontColor);
-    }
+  .temaul {
+    font-family: var(--fontUnderMenu);
+    font-size: var(--MfontSizeUnderMenu);
+  }
 
-    .temaul a:hover:not(.valgt) {
-        color: var(--hoverColor);
-    }
+  .tema {
+    font-family: var(--fontUnderMenu);
+    font-size: var(--MfontSizeUnderMenu);
+  }
 
-    .valgt {
-        color: var(--hoverColor);
-    }
+  /* Projekt Indhold */
 
-    .temaul {
-        font-family: var(--fontUnderMenu);
-        font-size: var(--MfontSizeUnderMenu);
-    }
+  h1 {
+    font-family: var(--fontUnderMenu);
+    font-size: var(--Mh1);
+    color: var(--hoverColor);
+  }
 
-    .tema {
-        font-family: var(--fontUnderMenu);
-        font-size: var(--MfontSizeUnderMenu);
-    }
+  h2 {
+    font-family: var(--fontUnderMenu);
+    font-size: var(--Mh2);
+    color: var(--hoverColor);
+  }
 
-    /* Projekt Indhold */
+  h3 {
+    font-family: var(--fontUnderMenu);
+    font-size: var(--Mh3);
+    color: var(--hoverColor);
+  }
 
-    h1 {
-        font-family: var(--fontUnderMenu);
-        font-size: var(--Mh1);
-        color: var(--hoverColor);
-    }
+  p {
+    max-width: 65ch;
+    font-family: var(--text);
+    font-size: var(--Mp);
+    color: var(--fontColor);
+  }
 
-    h2 {
-        font-family: var(--fontUnderMenu);
-        font-size: var(--Mh2);
-        color: var(--hoverColor);
-    }
-
-    h3 {
-        font-family: var(--fontUnderMenu);
-        font-size: var(--Mh3);
-        color: var(--hoverColor);
-    }
-
-    p {
-        max-width: 65ch;
-        font-family: var(--text);
-        font-size: var(--Mp);
-        color: var(--fontColor);
-    }
-
-    .tema5_2 ul {
-        list-style: disc;
-    }
-
-    .tema5_2 ul li {
-        font-family: var(--text);
-        color: var(--fontColor);
-
-    }
+  .tema5_2 ul li {
+    font-family: var(--text);
+    color: var(--fontColor);
+  }
 }
