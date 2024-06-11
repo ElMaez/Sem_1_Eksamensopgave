@@ -10,77 +10,59 @@ body {
   margin: auto;
 }
 
-#bg {
-  width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
-
-  background-image: url(/assets/Group\ 39.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-}
-
-#bg {
-  width: 100%;
-
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
-#bg nav {
-  grid-column: 1 /-1;
-  grid-row: 10 / 11;
-}
-
-#bg ul {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-}
-
-#indexli1 {
-  grid-column: 4 / 7;
-  grid-row: 1;
-  justify-self: end;
-}
-
-#indexli2 {
-  grid-column: 9/ 11;
-  grid-row: 1;
-}
-
 @media (max-width: 499px) {
   /*  Mobile */
   * {
     /* outline: dashed 1px blue; */
   }
 
-  #indexbg nav {
-    grid-column: 1 /-1;
-    grid-row: 8 / 9;
-  }
+  /* Index Main */
+  #container {
+    width: 100%;
+    height: 90vh;
 
-  #indexbg ul {
+    background-image: url(/assets/Group\ 39.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(14, 1fr);
+  }
+  #container nav {
+    grid-column: 1/-1;
+    grid-row: 9/10;
+    align-self: center;
+  }
+  #container nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
   #indexli1 {
-    grid-column: 4 / 7;
+    grid-column: 2/4;
     grid-row: 1;
-    justify-self: end;
-  }
 
+    color: var(--backgroundColor);
+
+    justify-self: center;
+    align-self: center;
+  }
   #indexli2 {
-    grid-column: 9/ 11;
+    grid-column: 4/5;
     grid-row: 1;
+
+    justify-self: center;
+    align-self: center;
   }
 
+  #indexli2 a {
+    color: var(--fontColor);
+  }
+  #container a {
+    font-family: var(--fontMenu);
+    font-size: var(--MfontSizeTitelMenu);
+  }
   /* Projekt */
   .headmenu,
   .temaul {
@@ -127,6 +109,12 @@ body {
     padding: var(--gap1);
   }
 
+  #t3_1 {
+    height: 20rem;
+  }
+  #t3_2 {
+    height: 20rem;
+  }
   .circleimg {
     width: min-content;
     grid-column: 1/ -1;
@@ -342,6 +330,7 @@ body {
 
   .slider3 {
     display: flex;
+
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -358,6 +347,10 @@ body {
 
   .slider-nav3 {
     display: flex;
+    flex-wrap: wrap;
+
+    row-gap: var(--gap1);
+
     column-gap: 1rem;
     position: absolute;
     left: 35%;
@@ -401,6 +394,7 @@ body {
   .ommig {
     width: 90vw;
     height: 80vh;
+    padding-top: var(--gap4);
     grid-column: 1 /-1;
     grid-row: 1;
 
