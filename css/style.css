@@ -112,4 +112,9 @@ a:hover:not(.valgt) {
     #tema5_2 ul {
         list-style: disc;
     }
+
+    #tema5_2 ul li {
+        font-family: var(--text);
+        color: var(--fontColor);
+    }
 }
