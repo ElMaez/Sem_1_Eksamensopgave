@@ -104,4 +104,7 @@ a:hover:not(.valgt) {
     font-family: var(--text);
     color: var(--fontColor);
   }
+  main ul li {
+    font-family: var(--text);
+  }
 }

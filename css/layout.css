@@ -1,8 +1,4 @@
-@import url(../css/root.css);
-
-* {
-  /* outline: dashed 1px red; */
-}
+@import url(css/root.css);
 
 body {
   width: 90vw;
@@ -12,16 +8,13 @@ body {
 
 @media (max-width: 499px) {
   /*  Mobile */
-  * {
-    /* outline: dashed 1px blue; */
-  }
 
   /* Index Main */
   #container {
     width: 100%;
     height: 90vh;
 
-    background-image: url(../assets/Group\ 39.svg);
+    background-image: url(assets/Group_39.svg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -61,7 +54,7 @@ body {
   }
   #container a {
     font-family: var(--fontMenu);
-    font-size: var(--MfontSizeTitelMenu);
+    font-size: var(--MfontSizeUnderMenu);
   }
   /* Projekt */
   .headmenu,
@@ -233,8 +226,8 @@ body {
     grid-row: 2 /-1;
 
     display: grid;
-    grid-column: 1fr;
-    grid-row: 1fr 1fr;
+    grid-column: 1;
+    grid-row: 1/1;
   }
 
   .tema5_2 h2 {
