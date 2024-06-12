@@ -37,7 +37,7 @@ a:hover:not(.valgt) {
   color: var(--detaljeColor);
 }
 
-@media (max-width: 499px) {
+@media (max-width: 599px) {
   /* Projekt navigation*/
   .headmenu {
     font-size: var(--MfontSizeTitelMenu);
