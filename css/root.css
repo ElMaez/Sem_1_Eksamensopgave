@@ -1,39 +1,34 @@
 :root {
+  --backgroundColor: #282828;
+  --fontColor: #f1e3d2;
+  --hoverColor: #e98868;
+  --detaljeColor: #3e7494;
 
-    --backgroundColor: #282828;
-    --fontColor: #F1E3D2;
-    --hoverColor: #E98868;
-    --detaljeColor: #3E7494;
+  --fontMenu: "Fredericka the Great", serif;
+  --fontUnderMenu: "Finger Paint", sans-serif;
+  --text: "Signika", sans-serif;
 
+  --fontSizeTitelMenu: 48px;
+  --fontSizeUnderMenu: 64px;
+  --h1: 48px;
+  --h2: 32px;
+  --h3: 24px;
+  --p: 20px;
 
+  --lineheight: 1.7rem;
 
-    --fontMenu: "Fredericka the Great", serif;
-    --fontUnderMenu: "Finger Paint", sans-serif;
-    --text: "Signika", sans-serif;
+  /* gaps */
+  --gap1: 1rem;
+  --gap2: 2rem;
+  --gap4: 4rem;
+  --gap6: 6rem;
+  --gap12: 12rem;
 
-
-    --fontSizeTitelMenu: 48px;
-    --fontSizeUnderMenu: 64px;
-    --h1: 48px;
-    --h2: 32px;
-    --h3: 24px;
-    --p: 20px;
-
-    --lineheight: 1.7rem;
-
-    /* gaps */
-    --gap1: 1rem;
-    --gap2: 2rem;
-    --gap4: 4rem;
-    --gap6: 6rem;
-    --gap12: 12rem;
-
-
-    /* Mobile */
-    --MfontSizeTitelMenu: 24px;
-    --MfontSizeUnderMenu: 24px;
-    --Mh1: 22px;
-    --Mh2: 20px;
-    --Mh3: 18px;
-    --Mp: 15px;
+  /* Mobile */
+  --MfontSizeTitelMenu: 24px;
+  --MfontSizeUnderMenu: 24px;
+  --Mh1: 22px;
+  --Mh2: 20px;
+  --Mh3: 18px;
+  --Mp: 15px;
 }
