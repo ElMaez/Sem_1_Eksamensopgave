@@ -25,10 +25,9 @@
   --gap12: 12rem;
 
   /* Mobile */
-  --MfontSizeTitelMenu: 24px;
-  --MfontSizeUnderMenu: 24px;
+  --MfontSizeMenu: 24px;
   --Mh1: 22px;
-  --Mh2: 20px;
-  --Mh3: 18px;
-  --Mp: 15px;
+  --Mh2: 18px;
+  --Mh3: 16px;
+  --Mp: 14px;
 }

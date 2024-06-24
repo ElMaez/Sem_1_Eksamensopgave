@@ -1,110 +1,74 @@
-@import url("root.css");
+@import url(css/root.css);
 
 * {
   padding: 0;
   margin: 0;
+  line-height: var(--lineheight);
 }
 
 body {
   background-color: var(--backgroundColor);
 }
-ul {
-  list-style: none;
-}
+ul a {
+  font-size: var(--MfontSizeMenu);
 
-a {
+  color: var(--fontColor);
+  list-style: none;
   text-decoration: none;
 }
 
-.headmenu {
+.indexmenu {
   font-family: var(--fontMenu);
-  font-size: var(--fontSizeTitelMenu);
 }
 
-.headmenu a:not(.valgt) {
+.headmenu a {
+  font-family: var(--fontMenu);
+}
+
+.temaul a {
+  font-family: var(--fontUnderMenu);
+}
+
+.valgt {
+  color: var(--hoverColor);
+}
+a:hover {
   color: var(--hoverColor);
 }
 
-a:hover:not(.valgt) {
+h1,
+h2,
+h3 {
+  font-family: var(--fontUnderMenu);
   color: var(--hoverColor);
 }
 
-#indexli1 a {
-  color: var(--backgroundColor);
+h1 {
+  font-size: var(--Mh1);
+}
+h2 {
+  font-size: var(--Mh2);
+}
+h3 {
+  font-size: var(--Mh3);
+}
+p,
+main li {
+  font-family: var(--text);
+  font-size: var(--Mp);
+  color: var(--fontColor);
+
+  max-width: 60ch;
 }
 
-#indexli1 a:hover {
-  color: var(--detaljeColor);
+img {
+  max-width: 50%;
 }
 
-@media (max-width: 599px) {
-  /* Projekt navigation*/
-  .headmenu {
-    font-size: var(--MfontSizeTitelMenu);
-  }
+#indexbg {
+  width: 100vw;
+  height: 90vh;
 
-  .headmenu a:not(.valgt) {
-    color: var(--fontColor);
-  }
-
-  .headmenu a:hover:not(.valgt) {
-    color: var(--hoverColor);
-  }
-
-  .temaul a:not(.valgt) {
-    color: var(--fontColor);
-  }
-
-  .temaul a:hover:not(.valgt) {
-    color: var(--hoverColor);
-  }
-
-  .valgt {
-    color: var(--hoverColor);
-  }
-
-  .temaul {
-    font-family: var(--fontUnderMenu);
-    font-size: var(--MfontSizeUnderMenu);
-  }
-
-  .tema {
-    font-family: var(--fontUnderMenu);
-    font-size: var(--MfontSizeUnderMenu);
-  }
-
-  /* Projekt Indhold */
-
-  h1 {
-    font-family: var(--fontUnderMenu);
-    font-size: var(--Mh1);
-    color: var(--hoverColor);
-  }
-
-  h2 {
-    font-family: var(--fontUnderMenu);
-    font-size: var(--Mh2);
-    color: var(--hoverColor);
-  }
-
-  h3 {
-    font-family: var(--fontUnderMenu);
-    font-size: var(--Mh3);
-    color: var(--hoverColor);
-  }
-
-  p {
-    max-width: 65ch;
-    font-family: var(--text);
-    font-size: var(--Mp);
-    color: var(--fontColor);
-  }
-
-  .tema5_2 ul li {
-    font-family: var(--text);
-    color: var(--fontColor);
-  }
-  main ul li {
-    font-family: var(--text);
-  }
+  background-image: url(../assets/Group_39.svg);
+  background-repeat: no-repeat;
 }
