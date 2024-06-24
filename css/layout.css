@@ -1,3 +1,42 @@
+/* Index */
+
 /* Mobile Layout */
 @media (max-width: 599px) {
+  #indexbg {
+    border: dashed 1px orange;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    justify-content: center;
+    align-content: center;
+  }
+
+  #indexmenu {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  #indexbg #container {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .indexmenu {
+    grid-column: 1/-1;
+    grid-row: 5;
+  }
+
+  .indexmenu ul {
+    display: flex;
+    flex-direction: row;
+  }
 }

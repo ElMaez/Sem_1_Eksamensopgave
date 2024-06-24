@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  line-height: var(--lineheight);
 }
 
 body {
@@ -13,8 +12,11 @@ ul a {
   font-size: var(--MfontSizeMenu);
 
   color: var(--fontColor);
-  list-style: none;
   text-decoration: none;
+}
+
+.indexmenu li {
+  list-style: none;
 }
 
 .indexmenu {
@@ -61,14 +63,7 @@ main li {
   max-width: 60ch;
 }
 
-img {
-  max-width: 50%;
-}
-
-#indexbg {
-  width: 100vw;
-  height: 90vh;
-
+#indexbg #container {
   background-image: url(../assets/Group_39.svg);
   background-repeat: no-repeat;
 }
