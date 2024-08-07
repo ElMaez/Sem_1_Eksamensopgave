@@ -25,7 +25,8 @@
   --gap12: 12rem;
 
   /* Mobile */
-  --MfontSizeMenu: 24px;
+  --MfontSizeMenu: 5vw;
+  --MfontSizeTitelMenu1: 4vw;
   --Mh1: 22px;
   --Mh2: 18px;
   --Mh3: 16px;
