@@ -17,6 +17,9 @@
 
   --lineheight: 1.7rem;
 
+  /* Image */
+  --ImgSize: 20rem;
+
   /* gaps */
   --gap1: 1rem;
   --gap2: 2rem;
@@ -25,8 +28,12 @@
   --gap12: 12rem;
 
   /* Mobile */
-  --MfontSizeMenu: 5vw;
+  /* --MfontSizeMenu: 5vw; */
+
+  --MfontSizeMenu: clamp(0.7rem, 0.5vw + 1rem, 3rem);
+
   --MfontSizeTitelMenu1: 4vw;
+
   --Mh1: 22px;
   --Mh2: 18px;
   --Mh3: 16px;

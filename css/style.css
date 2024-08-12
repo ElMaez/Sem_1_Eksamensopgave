@@ -16,6 +16,8 @@
     font-size: var(--MfontSizeTitelMenu1);
   }
 }
+
+/* Global */
 body {
   background-color: var(--backgroundColor);
 }

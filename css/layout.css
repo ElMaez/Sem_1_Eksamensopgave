@@ -1,47 +1,11 @@
 /* Mobile Layout */
-/* Index */
 @media (max-width: 599px) {
+  /* Index */
   #indexbg {
     border: dashed 1px orange;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    justify-content: center;
-    align-content: center;
-  }
-
-  #indexbg img {
-    width: 95dvw;
-    grid-column: 1/-1;
-    grid-row: 2/-1;
-
-    justify-self: center;
-  }
-
-  #indexbg #container {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .indexmenu {
-    width: 80%;
-
-    grid-column: 1/-1;
-    grid-row: 5;
-
-    justify-self: center;
-    align-self: last baseline;
   }
 
   .indexmenu ul {
-    display: flex;
-    flex-direction: row;
-
     gap: 10%;
   }
   #indexli1 {
@@ -54,48 +18,12 @@
 
 /* Pc */
 @media (min-width: 600px) {
+  /* index */
   #indexbg {
     border: dashed 1px rgb(0, 255, 0);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    justify-content: center;
-    align-content: center;
-  }
-
-  #indexbg img {
-    width: 95dvw;
-    max-height: 100vh;
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-
-    justify-self: center;
-  }
-
-  #indexbg #container {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .indexmenu {
-    width: 80%;
-
-    grid-column: 1/-1;
-    grid-row: 5;
-
-    justify-self: center;
-    align-self: last baseline;
   }
 
   .indexmenu ul {
-    display: flex;
-    flex-direction: row;
-
     gap: 5%;
   }
   #indexli1 {
@@ -104,4 +32,69 @@
   #indexli2 {
     margin-left: 5%;
   }
+}
+
+/* Index */
+#indexbg {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.indexmenu ul {
+  display: flex;
+  flex-direction: row;
+}
+#indexbg img {
+  max-width: 95dvw;
+  max-height: 100vh;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  justify-self: center;
+}
+#indexbg #container {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.indexmenu {
+  width: 80%;
+
+  grid-column: 1/-1;
+  grid-row: 5;
+
+  justify-self: center;
+  align-self: last baseline;
+}
+
+/* Project */
+
+.headmenu {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+.temaul {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+/* images */
+.circleimgom {
+  max-width: var(--ImgSize);
+}
+img {
+  max-width: 100%;
 }
